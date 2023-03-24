@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   const [movies, setMovies] = useState([]);
   useEffect(() => {
     async function getData() {
-      const response = await fetch('/api/movies');
+      const response = await fetch("/api/movies");
       const payload = await response.json();
       setMovies(payload.data);
     }
@@ -14,7 +14,7 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <p className='text-3xl font-bold underline'>Nice Movies:</p>
+      <p className="text-3xl font-bold underline">Nice Movies:</p>
       <p>{JSON.stringify(movies)}</p>
     </div>
   );

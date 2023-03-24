@@ -27,7 +27,9 @@ app.get("/api/movies/:id", async (request, response) => {
     console.log("❇️ Received GET request to /api/movies/:id");
     const movie = await MovieService.getMovieById(request.params.id);
     if (!movie) {
-      response.status(404).json({ error: `Movie with id ${request.params.id} not found` });
+      response
+        .status(404)
+        .json({ error: `Movie with id ${request.params.id} not found` });
       return;
     }
     response.json({ data: movie });
