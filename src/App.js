@@ -29,7 +29,7 @@ function App() {
         </a>
         <p>Nice Movies:</p>
         <p>{JSON.stringify(movies)}</p>
-        
+
       </header>
     </div>
   );
