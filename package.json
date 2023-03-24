@@ -10,7 +10,8 @@
     "p-memoize": "^4.0.4",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "^3.4.0"
+    "react-scripts": "^5.0.1",
+    "tailwindcss": "^3.2.7"
   },
   "scripts": {
     "start": "npm run development",

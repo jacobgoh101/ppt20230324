@@ -14,7 +14,7 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <p>Nice Movies:</p>
+      <p className='text-3xl font-bold underline'>Nice Movies:</p>
       <p>{JSON.stringify(movies)}</p>
     </div>
   );
